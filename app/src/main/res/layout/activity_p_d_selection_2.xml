@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".P_D_Select_Activity_2"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/main_doc_pic" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Welcome to DOCT"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/spartan_regular"
+            android:text="Select your Domain"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/patient"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/doc"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+
+
+            <Button
+                android:id="@+id/btn_patient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shapelogin"
+                android:onClick="startPatientLoginActivity"
+                android:text="patient"
+                android:textColor="@color/white"
+                android:transitionName="transition_login"
+                tools:ignore="ButtonStyle,UsingOnClickInXml" />
+
+
+            <Button
+                android:id="@+id/btn_Doctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shapelogin"
+                android:onClick="startDoctorLoginActivity"
+                android:text="doctor"
+                android:textColor="@color/white"
+                android:transitionName="transition_signup"
+                tools:ignore="ButtonStyle,UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#00000000"
+            android:text="How we work?"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_marginTop="@dimen/_80sdp"
+        tools:context="com.atinity.doct.MapsActivity_6" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapelogin"
+            android:onClick="CallAmbulance"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Call an Ambulance" />
+
+        <Button
+            android:id="@+id/btnHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/btnCall"
+            android:text="Nearby Hospitals"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/shapelogin"/>
+
+    </RelativeLayout>
+</RelativeLayout>
